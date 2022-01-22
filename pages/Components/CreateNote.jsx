@@ -4,8 +4,8 @@ const CreateNote = () => {
         <>
             <div className="createNote">
                 <Form>
-                    <input type="text" name="title" />
-                    <textarea name="content" />
+                    <input type="text" name="title" value="" onChange={changeHandler}/>
+                    <textarea name="content" value="" onChange={changeHandler}/>
                     <button><MdAdd/></button>
                 </Form>
             </div>
