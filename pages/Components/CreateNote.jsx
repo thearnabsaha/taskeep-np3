@@ -5,13 +5,26 @@ const CreateNote = () => {
         title:"",
         content:"",
     });
-    const changeHandler=() => {
-        
+    const changeHandler=(e) => {
+        const {name,value}=e.target;
+        setData((oldData)=>{
+            return{
+                ...oldData,
+                [name]:value,
+            }
+        })
+    }
+    const submitHandler=(e) => {
+        e.preventDefault()
+        setData({
+            title:"",
+            content:"",
+        })
     }
     return (
         <>
             <div className="createNote">
-            <form action="">
+            <form action="" onSubmit={submitHandler}>
                 <input type="text" name="title" value={data.title} onChange={changeHandler} autoComplete="off" placeholder="Title" />
                 <textarea name="content" value={data.content} onChange={changeHandler} placeholder="Type you note here..." />
                 <button><MdAdd/></button>
