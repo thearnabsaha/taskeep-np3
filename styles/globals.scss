@@ -131,3 +131,24 @@
         }
     }
 }
+@media(max-width:360px){
+    form{
+        .totalForm{
+            button{
+                left: 220px;
+                width: 45px;
+                height: 45px;
+            }
+            .inputs{
+                width: 250px;
+                input{
+                    width: 250px;
+                }
+                textarea{
+                    width: 250px;
+                }
+                
+            }
+        }
+    }
+}
