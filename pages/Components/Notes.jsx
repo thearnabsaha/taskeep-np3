@@ -3,9 +3,13 @@ const Notes = () => {
     return (
         <>
             <div className="notes">
-                <h2>title</h2>
-                <p>content</p>
-                <button><MdDelete/></button>
+                <div className="note">
+                    <div className="content">
+                    <h2>title</h2>
+                    <p>content lorem200</p>
+                    </div>
+                    <button><MdDelete className="delete"/></button>
+                </div>
             </div>
         </>
     );
