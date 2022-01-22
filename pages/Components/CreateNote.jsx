@@ -5,7 +5,9 @@ const CreateNote = () => {
         title:"",
         content:"",
     });
-
+    const changeHandler=() => {
+        
+    }
     return (
         <>
             <div className="createNote">
