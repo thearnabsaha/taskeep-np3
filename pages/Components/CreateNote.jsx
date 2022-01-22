@@ -5,6 +5,7 @@ const CreateNote = () => {
         title:"",
         content:"",
     });
+    const [records, setRecords] = useState([]);
     const changeHandler=(e) => {
         const {name,value}=e.target;
         setData((oldData)=>{
@@ -16,8 +17,14 @@ const CreateNote = () => {
     }
     const submitHandler=(e) => {
         e.preventDefault()
+        const newRecord = {...data}
         if(data.title&&data.content){
-
+            setRecords((oldData)=>{
+                return {
+                    ...oldData,newRecord
+                }
+            })
+            console.log(records);
             setData({
                 title:"",
                 content:"",
@@ -30,13 +37,15 @@ const CreateNote = () => {
     return (
         <>
             <div className="createNote">
-            <form action="" onSubmit={submitHandler}>
-                <div className="inputs">
-                    <input type="text" name="title" value={data.title} onChange={changeHandler} autoComplete="off" placeholder="Title" />
-                    <textarea name="content" value={data.content} onChange={changeHandler} placeholder="Type you note here..." />
-                </div>
-                <button><MdAdd className="add"/></button>
-            </form>
+                <form action="" onSubmit={submitHandler}>
+                    <div className="totalForm">
+                        <div className="inputs">
+                            <input type="text" name="title" value={data.title} onChange={changeHandler} autoComplete="off" placeholder="Title" />
+                            <textarea name="content" value={data.content} onChange={changeHandler} placeholder="Type you note here..." />
+                        </div>
+                            <button><MdAdd className="add"/></button>
+                    </div>
+                </form>
             </div>
         </>
     );
