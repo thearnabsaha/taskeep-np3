@@ -1,5 +1,9 @@
+import { useState } from "react";
 import { MdAdd } from "react-icons/md";
 const CreateNote = () => {
+    const [data, setData] = useState({
+        
+    });
     return (
         <>
             <div className="createNote">
