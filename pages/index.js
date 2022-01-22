@@ -11,8 +11,8 @@ const index = () => {
       </Head>
       <Header/>
       <CreateNote/>
-      <Footer/>
       <Notes/>
+      <Footer/>
     </>
   );
 }
