@@ -1,3 +1,4 @@
+import { MdAdd } from "react-icons/md";
 const CreateNote = () => {
     return (
         <>
@@ -5,7 +6,7 @@ const CreateNote = () => {
                 <Form>
                     <input type="text" name="title" />
                     <textarea name="content" />
-                    
+                    <button><MdAdd/></button>
                 </Form>
             </div>
         </>
