@@ -31,9 +31,11 @@ const CreateNote = () => {
         <>
             <div className="createNote">
             <form action="" onSubmit={submitHandler}>
-                <input type="text" name="title" value={data.title} onChange={changeHandler} autoComplete="off" placeholder="Title" />
-                <textarea name="content" value={data.content} onChange={changeHandler} placeholder="Type you note here..." />
-                <button><MdAdd/></button>
+                <div className="inputs">
+                    <input type="text" name="title" value={data.title} onChange={changeHandler} autoComplete="off" placeholder="Title" />
+                    <textarea name="content" value={data.content} onChange={changeHandler} placeholder="Type you note here..." />
+                </div>
+                <button><MdAdd className="add"/></button>
             </form>
             </div>
         </>
