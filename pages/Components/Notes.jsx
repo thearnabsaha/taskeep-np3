@@ -1,12 +1,12 @@
 import { MdOutlineDelete } from "react-icons/md";
-const Notes = () => {
+const Notes = (props) => {
     return (
         <>
             <div className="notes">
                 <div className="note">
                     <div className="content">
-                        <h2>title</h2>
-                        <p>content</p>
+                        <h2>{props.title}</h2>
+                        <p>{props.content}</p>
                     </div>
                     <button><MdOutlineDelete className="delete"/></button>
                 </div>
