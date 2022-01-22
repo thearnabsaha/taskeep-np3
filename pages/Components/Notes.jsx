@@ -1,19 +1,21 @@
 import { MdOutlineDelete } from "react-icons/md";
 const Notes = () => {
-    const notes = [{title:"arnab",content:"saha"},{title:"arnab",content:"saha"},{title:"arnab",content:"saha"},{title:"arnab",content:"saha"},{title:"arnab",content:"saha"},{title:"arnab",content:"saha"},{title:"arnab",content:"saha"},{title:"arnab",content:"saha"},{title:"arnab",content:"saha"},{title:"arnab",content:"saha"},{title:"arnab",content:"saha"},{title:"arnab",content:"saha"},]
-
+    const notes = [{title:"arnab",content:"saha",key:1},{title:"arnab",content:"saha",key:1},{title:"arnab",content:"saha",key:1},{title:"arnab",content:"saha",key:1},]
+    const deleteItem=() => {
+        
+    }
     return (
         <>
             <div className="notes">
                 {
                     notes.map((e)=>{
                         return(
-                            <div className="note">
+                            <div className="note" key={e.key}>
                                 <div className="content">
                                     <h2>{e.title}</h2>
                                     <p>{e.content}</p>
                                 </div>
-                                <button><MdOutlineDelete className="delete"/></button>
+                                <button><MdOutlineDelete className="delete" onClick={deleteItem} /></button>
                             </div>
                         )
                     })
