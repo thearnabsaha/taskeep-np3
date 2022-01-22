@@ -17,6 +17,7 @@ const CreateNote = () => {
     const submitHandler=(e) => {
         e.preventDefault()
         if(data.title&&data.content){
+
             setData({
                 title:"",
                 content:"",
