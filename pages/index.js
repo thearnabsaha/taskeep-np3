@@ -4,7 +4,6 @@ import Footer from './Components/Footer';
 import CreateNote from './Components/CreateNote';
 import Notes from './Components/Notes';
 const index = () => {
-  const notes = [{title:"arnab",content:"saha"},{title:"arnab",content:"saha"},{title:"arnab",content:"saha"},{title:"arnab",content:"saha"},{title:"arnab",content:"saha"},{title:"arnab",content:"saha"},{title:"arnab",content:"saha"},{title:"arnab",content:"saha"},]
   return (
     <>
       <Head>
@@ -12,13 +11,7 @@ const index = () => {
       </Head>
       <Header/>
       <CreateNote/>
-      {
-        notes.map((e)=>{
-          return(
-            <Notes title={e.title} content={e.content} />
-          )
-        })
-      }
+      <Notes/>
       <Footer/>
     </>
   );
