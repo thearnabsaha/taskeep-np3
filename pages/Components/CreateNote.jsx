@@ -3,11 +3,11 @@ const CreateNote = () => {
     return (
         <>
             <div className="createNote">
-                <Form>
-                    <input type="text" name="title" value="" onChange={changeHandler}/>
-                    <textarea name="content" value="" onChange={changeHandler}/>
-                    <button><MdAdd/></button>
-                </Form>
+            <form action="">
+                <input type="text" name="title" value="" onChange={changeHandler}/>
+                <textarea name="content" value="" onChange={changeHandler}/>
+                <button><MdAdd/></button>
+            </form>
             </div>
         </>
     );
