@@ -1,8 +1,11 @@
+import Head from 'next/head';
 const index = () => {
   return (
-    <div>
-      Enter
-    </div>
+    <>
+      <Head>
+        <title>TAS Keep</title>
+      </Head>
+    </>
   );
 }
 
