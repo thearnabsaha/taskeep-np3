@@ -16,10 +16,15 @@ const CreateNote = () => {
     }
     const submitHandler=(e) => {
         e.preventDefault()
-        setData({
-            title:"",
-            content:"",
-        })
+        if(data.title&&data.content){
+            setData({
+                title:"",
+                content:"",
+            })
+        }else{
+            alert("Fill Title and Content Both!!")
+        }
+
     }
     return (
         <>
