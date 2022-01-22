@@ -1,14 +1,287 @@
-import { MdDelete } from "react-icons/md";
+import { MdOutlineDelete } from "react-icons/md";
 const Notes = () => {
     return (
         <>
             <div className="notes">
                 <div className="note">
                     <div className="content">
-                    <h2>title</h2>
-                    <p>content lorem200</p>
+                        <h2>title</h2>
+                        <p>content</p>
                     </div>
-                    <button><MdDelete className="delete"/></button>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
+                </div>
+                <div className="note">
+                    <div className="content">
+                        <h2>title</h2>
+                        <p>content</p>
+                    </div>
+                    <button><MdOutlineDelete className="delete"/></button>
                 </div>
             </div>
         </>
