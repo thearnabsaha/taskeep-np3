@@ -7,24 +7,13 @@ const CreateNote = () => {
     });
     const [records, setRecords] = useState([]);
     const changeHandler=(e) => {
-        const {name,value}=e.target;
-        setData((oldData)=>{
-            return{
-                ...oldData,
-                [name]:value,
-            }
-        })
+        setData({...data,[e.target.name]:e.target.value})
     }
     const submitHandler=(e) => {
         e.preventDefault()
-        const newRecord = {...data}
         if(data.title&&data.content){
-            setRecords((oldData)=>{
-                return {
-                    ...oldData,newRecord
-                }
-            })
-            console.log(records);
+            const newRecord = {...data,id:new Date().getTime()} 
+            setRecords([...records,newRecord])
             setData({
                 title:"",
                 content:"",
@@ -47,6 +36,16 @@ const CreateNote = () => {
                     </div>
                 </form>
             </div>
+            {/* {
+                records.map((e)=>{
+                    return(
+                        <div key={e.id}>
+                            <h1>{e.title}</h1>
+                            <h1>{e.content}</h1>
+                        </div>
+                    )
+                })
+            } */}
         </>
     );
 }
