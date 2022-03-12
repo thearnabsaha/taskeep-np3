@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useState, createContext } from "react";
 import { MdAdd } from "react-icons/md";
 const CreateNote = () => {
+    const UserContext = createContext()
     const [data, setData] = useState({
         title:"",
         content:"",
     });
+    <UserContext.Provider value={records}></UserContext.Provider> 
     const [records, setRecords] = useState([]);
     const changeHandler=(e) => {
         setData({...data,[e.target.name]:e.target.value})
@@ -50,3 +52,4 @@ const CreateNote = () => {
 }
 
 export default CreateNote;
+export {UserContext}
