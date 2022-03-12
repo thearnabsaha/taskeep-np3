@@ -21,7 +21,6 @@ const CreateNote = () => {
         }else{
             alert("Fill Title and Content Both!!")
         }
-
     }
     return (
         <>
