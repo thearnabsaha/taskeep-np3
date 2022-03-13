@@ -28,7 +28,7 @@ const CreateNote = () => {
     return (
         <>
             <Array.Provider value={records}>
-                
+                <Notes/>
             </Array.Provider>
             <div className="createNote">
                     <form action="" onSubmit={submitHandler}>
@@ -41,8 +41,6 @@ const CreateNote = () => {
                         </div>
                     </form>
                 </div>
-                {console.log(records)}
-
             {/* {
                 records.map((e)=>{
                     return(

@@ -6,13 +6,13 @@ const Notes = () => {
     const deleteItem=() => {
         alert("this function haven't added yet")
     }
-    // const notes=useContext(Array)
-
+    const arrnotes=useContext(Array)
+    console.log(arrnotes);
     return (
         <>
             <div className="notes">
-            {
-                        notes.map((e,ind)=>{
+                {
+                    notes.map((e,ind)=>{
                         return(
                             <div className="note" key={ind}>
                                 <div className="content">
