@@ -1,12 +1,13 @@
-import { useState, createContext } from "react";
+import { useState,createContext } from "react";
 import { MdAdd } from "react-icons/md";
+import Notes from "./Notes";
 const CreateNote = () => {
-    const UserContext = createContext()
+    const Array=createContext()
+
     const [data, setData] = useState({
         title:"",
         content:"",
     });
-    <UserContext.Provider value={records}></UserContext.Provider> 
     const [records, setRecords] = useState([]);
     const changeHandler=(e) => {
         setData({...data,[e.target.name]:e.target.value})
@@ -26,17 +27,22 @@ const CreateNote = () => {
     }
     return (
         <>
+            <Array.Provider value={records}>
+                
+            </Array.Provider>
             <div className="createNote">
-                <form action="" onSubmit={submitHandler}>
-                    <div className="totalForm">
-                        <div className="inputs">
-                            <input type="text" name="title" value={data.title} onChange={changeHandler} autoComplete="off" placeholder="Title" />
-                            <textarea name="content" value={data.content} onChange={changeHandler} placeholder="Type you note here..." />
+                    <form action="" onSubmit={submitHandler}>
+                        <div className="totalForm">
+                            <div className="inputs">
+                                <input type="text" name="title" value={data.title} onChange={changeHandler} autoComplete="off" placeholder="Title" />
+                                <textarea name="content" value={data.content} onChange={changeHandler} placeholder="Type you note here..." />
+                            </div>
+                                <button><MdAdd className="add"/></button>
                         </div>
-                            <button><MdAdd className="add"/></button>
-                    </div>
-                </form>
-            </div>
+                    </form>
+                </div>
+                {console.log(records)}
+
             {/* {
                 records.map((e)=>{
                     return(
@@ -52,4 +58,3 @@ const CreateNote = () => {
 }
 
 export default CreateNote;
-export {UserContext}
