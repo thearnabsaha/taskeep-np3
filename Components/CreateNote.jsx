@@ -1,14 +1,14 @@
 import { useState,createContext } from "react";
 import { MdAdd } from "react-icons/md";
 import Notes from "./Notes";
+import {useGlobalContext} from '../reducers/context'
 const CreateNote = () => {
-    const Array=createContext()
-
+    const {dispatch}=useGlobalContext()
     const [data, setData] = useState({
         title:"",
         content:"",
     });
-    const [records, setRecords] = useState([]);
+    const arr=["arnab","arijit"]
     const changeHandler=(e) => {
         setData({...data,[e.target.name]:e.target.value})
     }
@@ -16,7 +16,8 @@ const CreateNote = () => {
         e.preventDefault()
         if(data.title&&data.content){
             const newRecord = {...data,id:new Date().getTime()} 
-            setRecords([...records,newRecord])
+            dispatch({type:"add",payload:newRecord})
+            dispatch({type:"arr",payload:arr})
             setData({
                 title:"",
                 content:"",
@@ -27,9 +28,6 @@ const CreateNote = () => {
     }
     return (
         <>
-            <Array.Provider value={records}>
-                <Notes/>
-            </Array.Provider>
             <div className="createNote">
                     <form action="" onSubmit={submitHandler}>
                         <div className="totalForm">

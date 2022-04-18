@@ -1,18 +1,16 @@
 import { MdOutlineDelete } from "react-icons/md";
-import { useContext } from 'react'
+import {useGlobalContext} from '../reducers/context'
 
 const Notes = () => {
-    const notes = [{title:"arnab",content:"saha"},{title:"arnab",content:"saha"},{title:"arnab",content:"saha"},{title:"arnab",content:"saha"},]
+    const {task}=useGlobalContext()
     const deleteItem=() => {
         alert("this function haven't added yet")
     }
-    const arrnotes=useContext(Array)
-    console.log(arrnotes);
     return (
         <>
             <div className="notes">
                 {
-                    notes.map((e,ind)=>{
+                    task.map((e,ind)=>{
                         return(
                             <div className="note" key={ind}>
                                 <div className="content">
